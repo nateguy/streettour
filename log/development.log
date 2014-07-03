@@ -218,3 +218,2688 @@ Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 10:36:10 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 10:36:10 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 10:49:31 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (8.0ms)
+Completed 200 OK in 250ms (Views: 250.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 10:49:32 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 10:49:32 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 10:49:32 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 10:49:32 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 10:52:03 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 10:52:03 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 10:52:03 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 10:52:03 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 10:52:03 +0800
+
+
+Started GET "/dist/js/bootstrap.min.js" for 127.0.0.1 at 2014-07-02 10:52:03 +0800
+
+ActionController::RoutingError (No route matches [GET] "/dist/js/bootstrap.min.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (32.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (131.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 10:52:58 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 10:52:58 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 10:52:58 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 10:52:58 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 10:52:58 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 10:56:23 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 10:56:23 +0800
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-02 10:56:23 +0800
+
+ActionController::RoutingError (No route matches [GET] "/css/bootstrap.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 10:56:23 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 10:56:23 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 10:56:23 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 10:57:01 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 10:57:01 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 10:57:01 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 10:57:01 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 10:57:01 +0800
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-02 10:57:01 +0800
+
+ActionController::RoutingError (No route matches [GET] "/css/bootstrap.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.9ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2014-07-02 10:57:01 +0800
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap.min.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 10:57:46 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 10:57:46 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 10:57:46 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 10:57:46 +0800
+
+
+Started GET "/dist/js/bootstrap.min.js" for 127.0.0.1 at 2014-07-02 10:57:46 +0800
+
+ActionController::RoutingError (No route matches [GET] "/dist/js/bootstrap.min.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.0ms)
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-02 10:57:46 +0800
+
+ActionController::RoutingError (No route matches [GET] "/css/bootstrap.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 10:57:46 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 10:59:16 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 10:59:16 +0800
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-02 10:59:16 +0800
+
+ActionController::RoutingError (No route matches [GET] "/css/bootstrap.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 10:59:16 +0800
+
+
+Started GET "/dist/js/bootstrap.min.js" for 127.0.0.1 at 2014-07-02 10:59:16 +0800
+
+ActionController::RoutingError (No route matches [GET] "/dist/js/bootstrap.min.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 10:59:16 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 10:59:16 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 10:59:18 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 10:59:18 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 10:59:18 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 10:59:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 10:59:18 +0800
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-02 10:59:18 +0800
+
+ActionController::RoutingError (No route matches [GET] "/css/bootstrap.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.8ms)
+
+
+Started GET "/dist/js/bootstrap.min.js" for 127.0.0.1 at 2014-07-02 10:59:19 +0800
+
+ActionController::RoutingError (No route matches [GET] "/dist/js/bootstrap.min.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:01:21 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (7.0ms)
+Completed 200 OK in 236ms (Views: 235.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 11:01:22 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 11:01:22 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 11:01:22 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 11:01:22 +0800
+
+
+Started GET "/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-02 11:01:22 +0800
+
+ActionController::RoutingError (No route matches [GET] "/css/bootstrap.min.css"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (32.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (169.2ms)
+
+
+Started GET "/dist/js/bootstrap.min.js" for 127.0.0.1 at 2014-07-02 11:01:22 +0800
+
+ActionController::RoutingError (No route matches [GET] "/dist/js/bootstrap.min.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:05:00 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 11:05:00 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 11:05:00 +0800
+
+
+Started GET "/dist/js/bootstrap.min.js" for 127.0.0.1 at 2014-07-02 11:05:01 +0800
+
+ActionController::RoutingError (No route matches [GET] "/dist/js/bootstrap.min.js"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 11:05:01 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 11:05:01 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:10:28 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 11:10:28 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 11:10:28 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 11:10:28 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 11:10:28 +0800
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-07-02 11:10:28 +0800
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2014-07-02 11:10:34 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:11:45 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 58ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 11:11:45 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 11:11:45 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 11:11:45 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 11:11:45 +0800
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2014-07-02 11:11:45 +0800
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-07-02 11:11:45 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:14:19 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 11:14:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 11:14:19 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 11:14:19 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 11:14:19 +0800
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-07-02 11:14:19 +0800
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2014-07-02 11:14:19 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:21:50 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 87ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 11:21:50 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 11:21:50 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 11:21:51 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 11:21:51 +0800
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2014-07-02 11:21:51 +0800
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-07-02 11:21:51 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:24:17 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 11:24:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 11:24:17 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 11:24:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 11:24:17 +0800
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2014-07-02 11:24:17 +0800
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-07-02 11:24:17 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:25:31 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (Invalid @import: expected end of line, was ";".
+  (in C:/workspace/streettour/app/assets/stylesheets/application.css.sass:7)):
+    2: <html>
+    3: <head>
+    4:   <title>Tours</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+    6:   <%= javascript_include_tag 'application' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.sass:7
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__29173944_29063184'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:25:59 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 2907ms (Views: 2906.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 11:26:02 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 11:26:02 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 11:26:02 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 11:26:02 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:31:20 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 2604ms (Views: 2603.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 11:31:23 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 11:31:23 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 11:31:23 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 11:31:23 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:31:50 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 69ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 11:31:50 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 11:31:50 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 11:31:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 11:31:50 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 11:54:47 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 1481ms (Views: 1480.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 11:54:49 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 11:54:49 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 11:54:49 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 11:54:49 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 11:54:49 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 12:10:10 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 17ms
+
+SyntaxError (C:/workspace/streettour/app/views/site/index.html:1: unterminated string meets end of file
+C:/workspace/streettour/app/views/site/index.html:1: syntax error, unexpected end-of-input, expecting '}'):
+  actionview (4.1.1) lib/action_view/template.rb:297:in `module_eval'
+  actionview (4.1.1) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `synchronize'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (177.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 12:11:10 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (2.0ms)
+Completed 200 OK in 80ms (Views: 79.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 12:11:11 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 12:11:11 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 12:11:11 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 12:11:11 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 12:11:11 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 12:12:48 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (2.0ms)
+Completed 200 OK in 74ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 12:12:49 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 12:12:49 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 12:12:49 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 12:12:49 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 12:12:49 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 12:13:28 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 69ms (Views: 68.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 12:13:29 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 12:13:29 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 12:13:29 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 12:13:29 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 12:13:29 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 12:13:41 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 12:13:41 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 12:13:42 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 12:13:42 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 12:13:42 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 12:13:42 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 12:44:18 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 78ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 12:44:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 12:44:18 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 12:44:18 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 12:44:18 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 12:44:18 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:29:07 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (43.1ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 1736ms (Views: 1639.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-02 15:29:10 +0800
+
+
+Started GET "/assets/noty/layouts/bottom.js?body=1" for 127.0.0.1 at 2014-07-02 15:29:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 15:29:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 15:29:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 15:29:10 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-02 15:29:10 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-02 15:29:10 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 15:29:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 15:29:10 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:29:41 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (147.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:29:47 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (73.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:31:43 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:32:07 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:32:10 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:32:12 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (75.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:32:16 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (73.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:32:18 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:32:27 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:32:50 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:34:06 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (73.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:37:18 +0800
+Processing by SiteController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/site_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (70.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:37:59 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (27.0ms)
+Completed 500 Internal Server Error in 678ms
+
+ActionView::Template::Error (undefined method `  if' for #<#<Class:0x47c9f28>:0x47ee6a8>):
+    1: <%
+    2: flash.each do |name, message|
+    3:   if message.is_a?(String) || message.is_a?(ActiveModel::Errors)
+    4:     notyType = (name == :notice ? "success" : "error")
+    5:     notyTimeout = (name == :notice ? 4000 : 30000)
+    6: 
+  app/views/layouts/_messages.html.erb:3:in `block in _app_views_layouts__messages_html_erb__656003009_42734352'
+  app/views/layouts/_messages.html.erb:2:in `_app_views_layouts__messages_html_erb__656003009_42734352'
+  app/views/layouts/application.html.erb:46:in `_app_views_layouts_application_html_erb__615589666_30243936'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:38:28 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+  Rendered layouts/_messages.html.erb (48.0ms)
+Completed 500 Internal Server Error in 132ms
+
+ActionView::Template::Error (undefined method `  if' for #<#<Class:0x47c9f28>:0x392d780>):
+    1: <%
+    2: flash.each do |name, message|
+    3:   if message.is_a?(String) || message.is_a?(ActiveModel::Errors)
+    4:     notyType = (name == :notice ? "success" : "error")
+    5:     notyTimeout = (name == :notice ? 4000 : 30000)
+    6: 
+  app/views/layouts/_messages.html.erb:3:in `block in _app_views_layouts__messages_html_erb__656003009_42734352'
+  app/views/layouts/_messages.html.erb:2:in `_app_views_layouts__messages_html_erb__656003009_42734352'
+  app/views/layouts/application.html.erb:46:in `_app_views_layouts_application_html_erb__615589666_30243936'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:39:37 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (20.0ms)
+Completed 500 Internal Server Error in 99ms
+
+ActionView::Template::Error (undefined method `  if' for #<#<Class:0x47c9f28>:0x39559b0>):
+    1: <%
+    2: flash.each do |name, message|
+    3:   if message.is_a?(String) || message.is_a?(ActiveModel::Errors)
+    4:     notyType = (name == :notice ? "success" : "error")
+    5:     notyTimeout = (name == :notice ? 4000 : 30000)
+    6: 
+  app/views/layouts/_messages.html.erb:3:in `block in _app_views_layouts__messages_html_erb__656003009_34904880'
+  app/views/layouts/_messages.html.erb:2:in `_app_views_layouts__messages_html_erb__656003009_34904880'
+  app/views/layouts/application.html.erb:46:in `_app_views_layouts_application_html_erb__615589666_30243936'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:41:44 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (81.8ms)
+Completed 200 OK in 162ms (Views: 161.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 15:41:45 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:45 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:45 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:45 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:45 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:45 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:45 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:45 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:45 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:41:50 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 79ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 15:41:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:50 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:51 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:51 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:51 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:51 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:51 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 15:41:51 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:42:16 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 15:42:16 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 15:42:16 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-02 15:42:16 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-02 15:42:16 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 15:42:16 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-02 15:42:16 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-02 15:42:17 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 15:42:17 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 15:42:17 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:53:16 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 4656ms (Views: 4654.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 15:53:21 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-02 15:53:21 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 15:53:21 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 15:53:21 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-02 15:53:21 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-02 15:53:21 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-02 15:53:21 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 15:53:21 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 15:53:21 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:54:56 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 2737ms (Views: 2735.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 15:54:59 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-02 15:54:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 15:54:59 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 15:54:59 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-02 15:54:59 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-02 15:54:59 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-02 15:54:59 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 15:54:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 15:54:59 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 15:55:23 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 2812ms (Views: 2809.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 15:55:26 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 15:55:26 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-02 15:55:26 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-02 15:55:26 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-02 15:55:26 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 15:55:26 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-02 15:55:26 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 15:55:26 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 15:55:26 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 17:14:14 +0800
+
+RuntimeError (Circular dependency detected while autoloading constant ApplicationHelper):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/site_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (82.3ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (195.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 17:14:49 +0800
+
+SyntaxError (C:/workspace/streettour/app/helpers/application_helper.rb:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/site_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (73.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 17:15:17 +0800
+
+SyntaxError (C:/workspace/streettour/app/helpers/application_helper.rb:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/site_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (73.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 17:15:18 +0800
+
+SyntaxError (C:/workspace/streettour/app/helpers/application_helper.rb:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/site_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (74.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 17:16:38 +0800
+
+RuntimeError (Circular dependency detected while autoloading constant ApplicationHelper):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/site_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (110.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 17:17:41 +0800
+
+RuntimeError (Circular dependency detected while autoloading constant ApplicationHelper):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/site_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (74.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 17:18:40 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 4204ms (Views: 4203.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 17:18:45 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 17:18:45 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 17:18:45 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-02 17:18:45 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-02 17:18:45 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-02 17:18:45 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-02 17:18:45 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-02 17:18:45 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 17:18:45 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 12:15:25 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (7.0ms)
+Completed 200 OK in 4788ms (Views: 4734.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 12:15:30 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 12:15:30 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 12:15:30 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 12:15:30 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 12:15:30 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 12:15:30 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 12:15:30 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 12:15:30 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 12:15:30 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 12:15:31 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 12:15:31 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 81ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:34 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 12:16:55 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:56 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 12:16:56 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:56 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 12:16:56 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:56 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:56 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:56 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:56 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:56 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:56 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 12:16:56 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 82ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:10 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 12:24:27 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:27 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 12:24:27 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:28 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:28 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 12:24:28 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:28 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:28 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:28 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:28 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:28 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:28 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 12:24:49 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 79ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:50 +0800
+
+
+Started GET "/?username=&password=" for 127.0.0.1 at 2014-07-03 12:24:52 +0800
+Processing by SiteController#index as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 76ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:52 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 12:24:52 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:52 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:52 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 12:24:52 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:52 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:52 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:53 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:53 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:53 +0800
+
+
+Started GET "/?username=&password=" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+Processing by SiteController#index as HTML
+  Parameters: {"username"=>"", "password"=>"[FILTERED]"}
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 12:24:54 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 12:49:41 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (7.0ms)
+Completed 200 OK in 427ms (Views: 372.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:42 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 12:49:42 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:43 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 12:49:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:43 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:43 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:43 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:43 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:43 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:43 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:43 +0800
+
+
+Started GET "/profile" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+Processing by ProfileController#index as HTML
+  Rendered profile/index.html within layouts/application (2.0ms)
+Completed 200 OK in 81ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 12:49:48 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 81ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 14:35:10 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 15:37:12 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (44.5ms)
+Completed 200 OK in 411ms (Views: 347.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:37:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:37:13 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:37:13 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:37:13 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:37:14 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:37:14 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:37:14 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:37:14 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:37:14 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:37:14 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:37:14 +0800
+
+
+Started GET "/profile?username=nateguy%40gmail.com&password=[FILTERED]" for 127.0.0.1 at 2014-07-03 15:37:22 +0800
+
+ActionController::RoutingError (undefined method `with' for ProfileController:Class):
+  app/controllers/profile_controller.rb:2:in `<class:ProfileController>'
+  app/controllers/profile_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (101.5ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (225.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 200 OK in 84ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:12 +0800
+
+
+Started GET "/profile?username=nateguy%40gmail.com&password=[FILTERED]" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+Processing by ProfileController#index as HTML
+  Parameters: {"username"=>"nateguy@gmail.com", "password"=>"[FILTERED]"}
+  Rendered profile/index.html within layouts/application (1.0ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:18 +0800
+
+
+Started GET "/profile?username=nateguy%40gmail.com&password=[FILTERED]" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+Processing by ProfileController#index as HTML
+  Parameters: {"username"=>"nateguy@gmail.com", "password"=>"[FILTERED]"}
+  Rendered profile/index.html within layouts/application (1.0ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:41 +0800
+
+
+Started GET "/profile?username=nateguy%40gmail.com&password=[FILTERED]" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+Processing by ProfileController#index as HTML
+  Parameters: {"username"=>"nateguy@gmail.com", "password"=>"[FILTERED]"}
+  Rendered profile/index.html within layouts/application (0.0ms)
+Completed 200 OK in 79ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:41:51 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 15:42:17 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:42:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:17 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:42:17 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:18 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:18 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:18 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:18 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:18 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:18 +0800
+
+
+Started GET "/profile?username=nateguy%40gmail.com&password=[FILTERED]" for 127.0.0.1 at 2014-07-03 15:42:22 +0800
+Processing by ProfileController#index as HTML
+  Parameters: {"username"=>"nateguy@gmail.com", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 8ms
+
+NameError (undefined local variable or method `username' for #<ProfileController:0x36f52e0>):
+  app/controllers/profile_controller.rb:10:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (96.7ms)
+
+
+Started GET "/profile?username=nateguy%40gmail.com&password=[FILTERED]" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+Processing by ProfileController#index as HTML
+  Parameters: {"username"=>"nateguy@gmail.com", "password"=>"[FILTERED]"}
+  Rendered profile/index.html within layouts/application (0.0ms)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:42:57 +0800
+
+
+Started GET "/profile?username=nateguy%40gmail.com&password=[FILTERED]" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+Processing by ProfileController#index as HTML
+  Parameters: {"username"=>"nateguy@gmail.com", "password"=>"[FILTERED]"}
+  Rendered profile/index.html within layouts/application (0.0ms)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:45:24 +0800
+
+
+Started GET "/profile?username=nateguy%40gmail.com&password=[FILTERED]" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+Processing by ProfileController#index as HTML
+  Parameters: {"username"=>"nateguy@gmail.com", "password"=>"[FILTERED]"}
+  Rendered profile/index.html within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:51:54 +0800
+
+
+Started GET "/profile?username=nateguy%40gmail.com&password=[FILTERED]" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+Processing by ProfileController#index as HTML
+  Parameters: {"username"=>"nateguy@gmail.com", "password"=>"[FILTERED]"}
+  Rendered profile/index.html within layouts/application (0.0ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:00 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:07 +0800
+
+
+Started GET "/profile?username=test&password=[FILTERED]" for 127.0.0.1 at 2014-07-03 15:57:14 +0800
+Processing by ProfileController#index as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]"}
+  Rendered profile/index.html within layouts/application (0.0ms)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:57:14 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:15 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:15 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:57:15 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:15 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:15 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:15 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:15 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:15 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:57:15 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 15:59:09 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:59:09 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:59:09 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:09 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:09 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:09 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:09 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:09 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:10 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:10 +0800
+
+
+Started POST "/profile" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+Processing by ProfileController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]"}
+Can't verify CSRF token authenticity
+  Rendered profile/create.html within layouts/application (1.0ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+
+
+Started GET "/assets/noty/jquery.noty.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+
+
+Started GET "/assets/profile.css?body=1" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+
+
+Started GET "/assets/noty/layouts/top.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+
+
+Started GET "/assets/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+
+
+Started GET "/assets/flashes/noty-config.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+
+
+Started GET "/assets/profile.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 15:59:16 +0800
+  [1m[36m (107.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (92.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateProfiles (20140703082213)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (9.0ms)[0m  CREATE TABLE "profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140703082213"]]
+  [1m[35m (80.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m

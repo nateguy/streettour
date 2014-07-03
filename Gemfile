@@ -10,8 +10,12 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
+gem 'noty-rails'
+
+gem 'bootstrap-sass','~> 3.2.0'
+
 # need to add tzinfo
-gem "tzinfo-data"
+gem 'tzinfo-data'
 gem 'spring',         group: :development
 
 group :development, :test do
