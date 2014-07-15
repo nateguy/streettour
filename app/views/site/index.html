@@ -1,8 +1,48 @@
-<div class"alert alert-warning">
+<!--
+<div class="alert alert-warning">
   <%= flash.map {|name, message| "#{name}: #{message}"}.join("; ") %>
+</div> -->
+<div>
+  <% @r.each do |i| %>
+  <li class="mapitem" data-lat=<%= i.latitude %> data-lon=<%= i.longitude %> ></li>
+  <% end %>
 </div>
-<form id="login" action="/profile" method="post">
-  Username: <input type="text" name="username" />
-  Password: <input type="text" name="password" />
-  <input type="submit" value="Submit" />
-</form>
+
+<div class="choosemap">
+  <div>
+    <h1>Where are you going today?</h1>
+  </div>
+  <div id="map"></div>
+  <div class="city"><a href="/guides/location/Hong Kong">
+    <img src=/images/hongkong.jpg></a>
+  </div>
+  <div class="city"><a href="/guides/location/Guangzhou">
+    <img src=/images/guangzhou.jpg></a>
+  </div>
+  <div class="city"><a href="/guides/location/Taipei"><img src=/images/taipei.jpg></a></div>
+  <div class="city"><a href="/guides/location/Bangkok"><img src=/images/bangkok.jpg></a></div>
+</div>
+
+<div>
+  <dialog class="loginbox">
+    <form id="login" action="/profile" method="post">
+      <h2>Tour Guide Login</h2>
+      <table>
+        <tr>
+          <td>Username:</td>
+          <td><input type="text" name="username" /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="text" name="password" /></td>
+        </tr>
+      </table>
+      <input type="submit" value="Submit" /></p>
+    </form>
+  </dialog>
+</div>
+
+
+<div class="guidelist">
+
+</div>

@@ -1,0 +1,3 @@
+<% @guides.each do |i| %>
+<h2><a href="/guides/<%= i.id %>"><%= image_tag i.avatar.url, size: "100" %></a> <%= i.firstname %> - <%= i.location %></h2>
+<% end %>

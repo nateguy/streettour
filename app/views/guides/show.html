@@ -1,0 +1,75 @@
+<dialog>
+
+  <div class="profile_details">
+    <div class="profile_img"><%= image_tag @g.avatar.url %></div>
+
+    <div class="profile_body">
+      <div class="profile_row">
+      <h2><%= @g.firstname %></h2>
+      </div>
+      <div class="profile_row">
+        <div class="descriptor">Location: </div>
+        <div class="field"><%= @g.location %></div>
+      </div>
+      <div class="profile_row">
+        <div class="descriptor">Languages: </div>
+        <div class="field">
+        <% @g.languages.each do |i| %>
+        <%= i.language %><br>
+        <% end %>
+        </div>
+      </div>
+      <div class="profile_row">
+        <div class="descriptor">Description: </div>
+        <div class="field"><%= @g.description %></div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <span>Comments:</span>
+  <div class="messages">
+
+      <% @post.each do |post| %>
+
+        <% if post.commenter_id.blank? %>
+          <% commenter_photo = "" %>
+          <% commenter_name = "Anonymous" %>
+        <% else %>
+          <% commenter = @c.find(post.commenter_id) %>
+          <% commenter_photo = commenter.avatar.url %>
+          <% commenter_name = commenter.firstname %>
+        <% end %>
+
+          <div class="message" id="message_<%= post.id %>">
+            <div class="photo"><%= image_tag commenter_photo %> </div>
+            <div class="body">
+              <header>
+                <span class="name"><%= commenter_name %></span>
+                <span class="title"><%= post.title %></span>
+              </header>
+              <div class="content"><%= post.content %></div>
+            </div>
+          </div>
+
+      <% end %>
+
+  </div>
+
+  <div class="comment_box">
+    <form id="create" action="/guides/comment/<%= @g.id %>" method="post">
+      <input type="text" placeholder="Title" name="title" id="user_id"><br>
+      <textarea placeholder="Comment" name="content"></textarea><br>
+      <input type="submit" value="Leave comment">
+    </form>
+  </div>
+
+  </div>
+
+  <button class="message">Message Guide</button>
+
+</dialog>
