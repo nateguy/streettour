@@ -2,11 +2,23 @@
 <div class="alert alert-warning">
   <%= flash.map {|name, message| "#{name}: #{message}"}.join("; ") %>
 </div> -->
+
 <div>
-  <% @r.each do |i| %>
-  <li class="mapitem" data-lat=<%= i.latitude %> data-lon=<%= i.longitude %> ></li>
+  <% @locations.each do |i| %>
+  <% if i.users.any? == true %>
+  <li class="mapitem" data-city='<%= i.city %>' data-lat=<%= i.latitude %> data-lon=<%= i.longitude %> ></li>
+  <% end %>
   <% end %>
 </div>
+
+<div>
+
+  <% @g.each do |l| %>
+  <li class="guidelocations" data-id='<%= l.id %>' data-firstname='<%= l.firstname %>' data-avatar='<%= l.avatar.url %>' data-location='<%= l.location.city %>'><%= l.firstname %><%= l.location.city %></li>
+  <% end %>
+
+</div>
+
 
 <div class="choosemap">
   <div>

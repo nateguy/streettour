@@ -6,6 +6,7 @@ class GuidesController < ApplicationController
   def index #listing of the following items
     #@guides = User.all
     @guides = User.where(isguide: true)
+    @locations = Location.all
 
   #  guides.username = params[:name] #parameter/value name of html username
   #  flash.now[:notice] = guides.username
@@ -16,12 +17,7 @@ class GuidesController < ApplicationController
   end
 
 
-  def location
-    @guides = User.where(isguide: true)
-   #@g = @guides.select{ |guides.location| guides.location[params[:location]]}
-    @g = @guides.where(location: params[:location])
-   # @g = Guides.find_by_location(params[:location])
-  end
+
 
   def show
 
@@ -42,18 +38,21 @@ class GuidesController < ApplicationController
 
 
   def comment
+    if user_signed_in?
+      user_id = params[:user_id]
+      comments = Comment.new
+      comments.title = params[:title]
+      comments.content = params[:content]
+      comments.user_id = user_id
+      comments.commenter_id = User.current.id
+    end
 
-    user_id = params[:user_id]
-    com = Comment.new
-    com.title = params[:title]
-    com.content = params[:content]
-    com.user_id = user_id
-    com.commenter_id = User.current.id
-    if com.save
-      redirect_to action: 'show', id: params[:user_id]
-      #render :show, :id=>params[:user_id]
+    if comments.save
+
+      redirect_to :back
     else
-      render :text, "Error"
+      render text: "Error"
+      redirect_to :back
     end
   end
 
@@ -73,4 +72,12 @@ class GuidesController < ApplicationController
     end
   end
 
+
+  def locations
+    if params[:location] != ""
+      @y = Location.find_by city: params[:location]
+      @guides = @y.users
+    end
+  #  @g = Guides.find_by_location(params[:location])
+  end
 end
