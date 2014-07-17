@@ -10,6 +10,8 @@ body {
   padding-top: 60px;
 }
 
+
+
 .overlay {
   display: none;
   position: fixed;
@@ -20,6 +22,8 @@ body {
   z-index: 1;
   background-color: rgba(0,0,0,0.8);
   }
+
+
 
 .languageadd {
   width: 300px;
@@ -102,7 +106,7 @@ body {
 }
 
 .choosemap {
-  width: 600px;
+  width: 800px;
 }
 
 
@@ -234,6 +238,8 @@ li {
   margin: 0 auto;
 }
 
+
+
 .profile_img {
   display: table-cell;
   padding-right: 5px;
@@ -343,6 +349,18 @@ header .title {
   outline: none;
   background-color: #f2f2f2;
 
+}
+
+.leaflet-popup-content h3 {
+  font-size: 16pt;
+}
+
+.leaflet-popup-content p {
+  font-size: 12pt;
+}
+
+.leaflet-popup-content img {
+  margin: 1px 1px 1px 1px;
 }
 
 .comment_box input {

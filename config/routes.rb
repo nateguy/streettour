@@ -20,5 +20,6 @@ Rails.application.routes.draw do
   get 'guides/location/:location' => 'guides#locations'
   post 'guides' => 'guides#create'
   post 'guides/language' => 'guides#language'
+  post 'guides/newlocation' => 'guides#newlocation'
 
 end

@@ -3,13 +3,8 @@ locality = ""
 
 $ ->
 
-  console.log "Coffee in rails"
-#  displayLogin()
 
-
-
-
-  Setupview = (lat, lon) ->
+  setupView = (lat, lon) ->
     @map = L.map('map').setView([lat, lon], 5);
     L.tileLayer('http://{s}.tiles.mapbox.com/v3/nateguy.ip5nk518/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -18,72 +13,103 @@ $ ->
 
   panMap = (lat, lon, map) -> map.panTo([lat, lon])
 
-
-  showMarker = (lat, lon, map, city) ->
-    list = "Guides in: #{city}<br>"
-    t = L.marker([lat, lon]).addTo(map)
-    guidelocations = $('.guidelocations')
-
-    for i in guidelocations
-      i = $(i)
-      if i.data('location') == city
-
-        link = "/guides/" + i.data('id')
-        firstname = i.data('firstname')
-        avatar = i.data('avatar')
-
-        list = list + "<a href=#{link}><img width=40 src=#{avatar}></a>"
-
-    list = list + "<br><a href='guides/location/#{city}'>See more...</a>"
-    t.bindPopup(list).openPopup();
-    #t.bindPopup("<%= %>").openPopup();
+  showGuideMarkers = (lat, lon, map, city, id, registration) ->
 
 
+    guideImageLinksForCity = (city) ->
 
-  marker = (map) ->
+      buildLink = (guideId, avatar) ->
+        "<a href=/guides/#{guideId}><image width=120 src=#{avatar}></a>"
+
+      guides = ""
+
+      guideInfos = $('.guidelocations')
+
+      for guideInfo in guideInfos
+        guideInfo = $(guideInfo)
+
+        if guideInfo.data('location') == city
+
+          link = buildLink(guideInfo.data('id'), guideInfo.data('avatar'))
+          guides += link
+
+      guides
+
+    if registration == true
+
+      header = "<h3>#{city}</h3>"
+      content = ""
+      footer = "<a onclick='myFunction(" + id + ")'>Select</a>"
+    else
+      header = "<h3>Guides in: #{city}</h3>"
+      content = guideImageLinksForCity(city)
+      footer = "<p><a href='guides/location/#{city}'>See more...</a></p>"
+
+
+    popupContent = header + '<br>' + content + footer
+    marker = L.marker([lat, lon]).addTo(map)
+    marker.bindPopup(popupContent).openPopup()
+
+  showLocationWithGuides = (map) ->
+
     mapitems = $('.mapitem')
 
     for i in mapitems
       i = $(i)
+      if i.data('guideexist') == true
+        id = i.data('id')
+        city = i.data('city')
+        lat = i.data('lat')
+        lon = i.data('lon')
+        showGuideMarkers(lat, lon, map, city, false)
+
+  showAllLocations = (map) ->
+
+    mapitems = $('.mapitem')
+
+    for i in mapitems
+      i = $(i)
+      id = i.data('id')
       city = i.data('city')
       lat = i.data('lat')
       lon = i.data('lon')
-      console.log city + " " + lat + " " + lon
-      showMarker(lat, lon, map, city)
+      showGuideMarkers(lat, lon, map, city, id, true)
 
-  Setupview(22.279774, 114.153814)
-  marker(map)
+  setupView(22.279774, 114.153814)
+
+  $('.leaflet-popup-content-wrapper')
+
 
   $('#closebutton').click ->
-    console.log "heyheyhey"
     $('.languageadd').css({"display":"none"})
     $('.overlay').css({"display":"none"})
+
+  $('#displayLocationButton').click ->
+    displayLocationMap()
 
   $('#displayLanguageButton').click ->
     displayLanguage()
 
-  map.on('click', onMapClick)
+  # map functions differently depending on page
+  if $(".signin_map")[0]
+    showAllLocations(map)
+    map.on('click', onMapClick)
 
+  else
+    showLocationWithGuides(map)
 
-
+myFunction = ->
+  $('.selectedLoc').html("heyheyhey")
+  alert('hey')
 
 onMapClick = (e) ->
-  lat = e.latlng.lat
-  lon = e.latlng.lng
-  console.log lat + " " + lon
-  t = codeLatLng(lat, lon)
-  timeout = 80000
-  popup = L.popup();
+  console.log "onMapClick"
+  codeLatLng(e)
 
-  popup
-    .setLatLng(e.latlng)
-    .setContent("here " + t)
-    .openOn(map);
-    $('.clicklocation').html("<% Geocoder.search([#{lat}, #{lon}]) %>")
+displayLocationMap = ->
 
-
-
-
+  $('.signin_map').css({"display":"block"})
+  $('.overlay').css({"display":"block"})
 
 displayLanguage = ->
 
@@ -93,12 +119,34 @@ displayLanguage = ->
 initialize = ->
   geocoder = new google.maps.Geocoder();
 
-storeResult = (result) ->
+setLocationPin = (result, e) ->
   locality = result
 
-codeLatLng = (lat, lng) ->
+  popup = L.popup();
+
+  header_text = "<h3>#{locality}<h3>"
+  content = "<p>Add this location?<br>
+  <form id='newlanguage' action='/guides/newlocation' method='post'>
+  <input type='hidden' name='locality' value='" + locality + "'>
+  <button type='submit' value='submit'>Yes</button></p>"
+
+  popup
+      .setLatLng(e.latlng)
+      .setContent(header_text + content)
+      .openOn(map);
+
+
+
+
+
+codeLatLng = (e) ->
+  lat = e.latlng.lat
+  lon = e.latlng.lng
+  console.log "codelatlng"
   result = ""
-  latlng = new google.maps.LatLng(lat, lng)
+  latlng = new google.maps.LatLng(lat, lon)
+
+
 
   geocodeCallback = (results, status) ->
 
@@ -107,23 +155,18 @@ codeLatLng = (lat, lng) ->
         for address_component in address.address_components
           for type in address_component.types
             if type == "locality"
-              console.log "run 1 " + address_component.short_name
-              storeResult(address_component.short_name)
+
               return address_component.short_name
       return undefined
 
     if (status == google.maps.GeocoderStatus.OK)
       if (results.length != 0)
-        storeResult(findLocality(results))
+        console.log "running"
+        setLocationPin(findLocality(results), e)
       else
         result = 'No results found'
     else
       result = 'Geocoder failed due to: ' + status
 
   geocoder.geocode({'latLng': latlng}, geocodeCallback)
-  return locality
-
-
-
-
 

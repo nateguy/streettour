@@ -1,9 +1,9 @@
 class RegistrationsController < Devise::RegistrationsController
 
   def create
-    super
-    @loc = Location.all
 
+    @loc = Location.all
+    super
     params[:newlanguage]
     language_ids = params[:user][:language_ids] #grab IDS
     language_ids.each do |id|

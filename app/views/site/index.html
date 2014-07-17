@@ -2,8 +2,11 @@
 
 <div>
   <% @locations.each do |i| %>
-  <% if i.users.any? == true %>
-  <li class="mapitem" data-city='<%= i.city %>' data-lat=<%= i.latitude %> data-lon=<%= i.longitude %> ></li>
+  <% guides_loc = i.users.select { |isguide| isguide } %>
+  <% if guides_loc.any? == true %>
+  <li class="mapitem" data-guideexist='true' data-city='<%= i.city %>' data-lat=<%= i.latitude %> data-lon=<%= i.longitude %> ></li>
+  <% else %>
+  <li class="mapitem" data-guideexist='false' data-city='<%= i.city %>' data-lat=<%= i.latitude %> data-lon=<%= i.longitude %> ></li>
   <% end %>
   <% end %>
 </div>

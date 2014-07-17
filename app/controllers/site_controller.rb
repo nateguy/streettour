@@ -24,11 +24,8 @@ class SiteController < ApplicationController
       end
     end
 
-    # now is an internal array
 
-  #  flash.now[:notice] = "You ARE weird"
-
-    flash.now[:notice] = "hi"
+  #  flash.now[:notice] = "hi"
   end
 
   def location

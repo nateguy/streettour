@@ -4,16 +4,15 @@
 
 <div>
   <% @loc.each do |i| %>
-  <li class="mapitem" data-city='<%= i.city %>' data-lat=<%= i.latitude %> data-lon=<%= i.longitude %> ></li>
+  <li class="mapitem" data-id='<%=i.id %>' data-city='<%= i.city %>' data-lat=<%= i.latitude %> data-lon=<%= i.longitude %> ></li>
   <% end %>
 </div>
 
 
+
 <h2>Sign up</h2>
 
-<div class="signin_map">
-  <div id="map"></div>
-</div>
+
 
 <div class="overlay">
   <div class="languageadd">
@@ -27,10 +26,21 @@
     </dialog>
   </div>
 </div>
-
+<label>Where are you based?</label>
+<div class="signin_map">
+  <div id="map"></div>
+  <br>
+</div>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
+  <div class='location'>
+    <%= f.label :'You selected:' %><br>
+    <%= f.collection_select :location_id, Location.all, :id, :city, {},
+        {:multiple => false} %>
+
+  </div>
+<label>Personal Information</label>
   <div class='email'>
     <%= f.email_field :email, :placeholder => "E-mail", autofocus: true, class: "big_box" %>
   </div>
@@ -39,14 +49,6 @@
   </div>
   <div class='password'><%= f.password_field :password, :placeholder => "Password", class: "small_box", autocomplete: "off" %><%= f.password_field :password_confirmation, :placeholder => "Password Confirmation", class: "small_box", autocomplete: "off" %>
   </div>
-
-  <div class='location'>
-    <%= f.label :'Where are you based?' %><br>
-    <%= f.collection_select :location_id, Location.all, :id, :city, {},
-        {:multiple => false} %>
-
-  </div>
-
 
 
   <div class='languages'>
@@ -57,7 +59,9 @@
   </div>
 
 
-  <div class='description'><%= f.text_area :description, :placeholder => "Description"  %></div>
+  <div class='description'>
+<%= f.label :'Describe yourself in 300 words' %><br>
+  <%= f.text_area :description, :placeholder => "Description"  %></div>
 
 
   <div class='guide'><%= f.label :'Are you registering as a guide?' %>
@@ -75,3 +79,5 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+

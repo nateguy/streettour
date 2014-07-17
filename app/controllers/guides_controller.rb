@@ -37,6 +37,23 @@ class GuidesController < ApplicationController
     end
   end
 
+  def newlocation
+    string = params[:locality].capitalize
+    a = Location.find_by city: string
+    if a.nil? == true
+      newlocation = Location.new
+      newlocation.city = string
+
+      if newlocation.save
+        redirect_to :back
+        flash.now[:notice] = "Location added"
+      else
+        flash.now[:notice] = "Location add failed"
+        redirect_to :back
+      end
+    end
+  end
+
   def language
     string = params[:language].capitalize
     a = Language.find_by language: string
@@ -70,8 +87,9 @@ class GuidesController < ApplicationController
 
         redirect_to :back
       else
-        render text: "Error"
+        flash.now[:notice] = "Sorry there was an error"
         redirect_to :back
+
       end
     end
   end
@@ -95,8 +113,8 @@ class GuidesController < ApplicationController
 
   def locations
     if params[:location] != ""
-      @y = Location.find_by city: params[:location]
-      @guides = @y.users
+      @y = (Location.find_by city: params[:location]).users
+      @guides = @y.where(isguide: true)
     end
   #  @g = Guides.find_by_location(params[:location])
   end
