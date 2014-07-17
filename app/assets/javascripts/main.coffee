@@ -1,5 +1,5 @@
 geocoder = new google.maps.Geocoder()
-@locality = ""
+locality = ""
 
 $ ->
 
@@ -64,24 +64,21 @@ $ ->
 
   map.on('click', onMapClick)
 
-  google.maps.event.addDomListener(window, 'load', initialize);
-  codeLatLng(22.5, 114.1)
+
+
 
 onMapClick = (e) ->
-  cord = []
-  lat = 0
-  lon = 0
-  popup = L.popup();
   lat = e.latlng.lat
   lon = e.latlng.lng
-  locality = codeLatLng(lat, lon)
-
+  console.log lat + " " + lon
+  t = codeLatLng(lat, lon)
+  timeout = 80000
+  popup = L.popup();
 
   popup
     .setLatLng(e.latlng)
-    .setContent("here " + locality)
+    .setContent("here " + t)
     .openOn(map);
-    console.log lat + " " + lon
     $('.clicklocation').html("<% Geocoder.search([#{lat}, #{lon}]) %>")
 
 
@@ -97,14 +94,11 @@ initialize = ->
   geocoder = new google.maps.Geocoder();
 
 storeResult = (result) ->
-  @locality = result
+  locality = result
 
 codeLatLng = (lat, lng) ->
   result = ""
   latlng = new google.maps.LatLng(lat, lng)
-
-
-
 
   geocodeCallback = (results, status) ->
 
@@ -113,7 +107,8 @@ codeLatLng = (lat, lng) ->
         for address_component in address.address_components
           for type in address_component.types
             if type == "locality"
-              console.log "run 1"
+              console.log "run 1 " + address_component.short_name
+              storeResult(address_component.short_name)
               return address_component.short_name
       return undefined
 
@@ -124,11 +119,10 @@ codeLatLng = (lat, lng) ->
         result = 'No results found'
     else
       result = 'Geocoder failed due to: ' + status
-    console.log "result 1" + result
-    return result
-
 
   geocoder.geocode({'latLng': latlng}, geocodeCallback)
+  return locality
+
 
 
 
