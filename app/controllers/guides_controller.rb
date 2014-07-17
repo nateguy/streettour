@@ -5,6 +5,7 @@ class GuidesController < ApplicationController
 
   def index #listing of the following items
     #@guides = User.all
+
     @guides = User.where(isguide: true)
     @locations = Location.all
 
@@ -36,6 +37,24 @@ class GuidesController < ApplicationController
     end
   end
 
+  def language
+    string = params[:language].capitalize
+    a = Language.find_by language: string
+
+    if a.nil? == true
+      newlang = Language.new
+      newlang.language = string
+
+      if newlang.save
+        redirect_to :back
+        flash.now[:notice] = "Language added"
+
+      else
+        flash.now[:notice] = "Language add failed"
+        redirect_to :back
+      end
+    end
+  end
 
   def comment
     if user_signed_in?
@@ -45,14 +64,15 @@ class GuidesController < ApplicationController
       comments.content = params[:content]
       comments.user_id = user_id
       comments.commenter_id = User.current.id
-    end
 
-    if comments.save
 
-      redirect_to :back
-    else
-      render text: "Error"
-      redirect_to :back
+      if comments.save
+
+        redirect_to :back
+      else
+        render text: "Error"
+        redirect_to :back
+      end
     end
   end
 

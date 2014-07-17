@@ -1,7 +1,13 @@
+geocoder = new google.maps.Geocoder()
+@locality = ""
+
 $ ->
 
   console.log "Coffee in rails"
-  displayLogin()
+#  displayLogin()
+
+
+
 
   Setupview = (lat, lon) ->
     @map = L.map('map').setView([lat, lon], 5);
@@ -48,8 +54,82 @@ $ ->
   Setupview(22.279774, 114.153814)
   marker(map)
 
+  $('#closebutton').click ->
+    console.log "heyheyhey"
+    $('.languageadd').css({"display":"none"})
+    $('.overlay').css({"display":"none"})
+
+  $('#displayLanguageButton').click ->
+    displayLanguage()
+
+  map.on('click', onMapClick)
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+  codeLatLng(22.5, 114.1)
+
+onMapClick = (e) ->
+  cord = []
+  lat = 0
+  lon = 0
+  popup = L.popup();
+  lat = e.latlng.lat
+  lon = e.latlng.lng
+  locality = codeLatLng(lat, lon)
 
 
-displayLogin = ->
-  $('.login_box').fadeIn()
-  $('.login_box').css({"display":"block"})
+  popup
+    .setLatLng(e.latlng)
+    .setContent("here " + locality)
+    .openOn(map);
+    console.log lat + " " + lon
+    $('.clicklocation').html("<% Geocoder.search([#{lat}, #{lon}]) %>")
+
+
+
+
+
+displayLanguage = ->
+
+  $('.languageadd').css({"display":"block"})
+  $('.overlay').css({"display":"block"})
+
+initialize = ->
+  geocoder = new google.maps.Geocoder();
+
+storeResult = (result) ->
+  @locality = result
+
+codeLatLng = (lat, lng) ->
+  result = ""
+  latlng = new google.maps.LatLng(lat, lng)
+
+
+
+
+  geocodeCallback = (results, status) ->
+
+    findLocality = (results) ->
+      for address in results
+        for address_component in address.address_components
+          for type in address_component.types
+            if type == "locality"
+              console.log "run 1"
+              return address_component.short_name
+      return undefined
+
+    if (status == google.maps.GeocoderStatus.OK)
+      if (results.length != 0)
+        storeResult(findLocality(results))
+      else
+        result = 'No results found'
+    else
+      result = 'Geocoder failed due to: ' + status
+    console.log "result 1" + result
+    return result
+
+
+  geocoder.geocode({'latLng': latlng}, geocodeCallback)
+
+
+
+

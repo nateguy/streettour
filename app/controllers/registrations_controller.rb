@@ -2,7 +2,9 @@ class RegistrationsController < Devise::RegistrationsController
 
   def create
     super
+    @loc = Location.all
 
+    params[:newlanguage]
     language_ids = params[:user][:language_ids] #grab IDS
     language_ids.each do |id|
       @user.languages << Language.find(id) unless id.blank?
@@ -17,6 +19,11 @@ class RegistrationsController < Devise::RegistrationsController
     language_ids.each do |id|
       @user.languages << Language.find(id) unless id.blank?
     end
+  end
+
+  def new
+    @loc = Location.all
+    super
   end
 
 

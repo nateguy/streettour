@@ -1,6 +1,7 @@
 class SiteController < ApplicationController
 
   def index #listing of the following items
+
     @locations = Location.all
     @g = []
 
@@ -24,13 +25,14 @@ class SiteController < ApplicationController
     end
 
     # now is an internal array
-  #  flash.now[:alert] = "There is no URL. 404"
+
   #  flash.now[:notice] = "You ARE weird"
 
-  #  flash.now[:notice] = "hi"
+    flash.now[:notice] = "hi"
   end
 
   def location
+
     @guides = User.where(isguide: true)
    #@g = @guides.select{ |guides.location| guides.location[params[:location]]}
     @guides_location = []
@@ -40,6 +42,7 @@ class SiteController < ApplicationController
       end
     end
   #  @g = Guides.find_by_location(params[:location])
+
   end
 
   def privacy #static page
@@ -49,6 +52,7 @@ class SiteController < ApplicationController
   end
 
   def about
+       flash.now[:alert] = "About"
   end
 
 end

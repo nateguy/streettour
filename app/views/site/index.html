@@ -1,7 +1,4 @@
-<!--
-<div class="alert alert-warning">
-  <%= flash.map {|name, message| "#{name}: #{message}"}.join("; ") %>
-</div> -->
+
 
 <div>
   <% @locations.each do |i| %>
@@ -21,18 +18,11 @@
 
 
 <div class="choosemap">
-  <div>
+
     <h1>Where are you going today?</h1>
-  </div>
+
   <div id="map"></div>
-  <div class="city"><a href="/guides/location/Hong Kong">
-    <img src=/images/hongkong.jpg></a>
-  </div>
-  <div class="city"><a href="/guides/location/Guangzhou">
-    <img src=/images/guangzhou.jpg></a>
-  </div>
-  <div class="city"><a href="/guides/location/Taipei"><img src=/images/taipei.jpg></a></div>
-  <div class="city"><a href="/guides/location/Bangkok"><img src=/images/bangkok.jpg></a></div>
+
 </div>
 
 <div>

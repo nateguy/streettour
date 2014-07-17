@@ -1,4 +1,32 @@
+<div class="clicklocation">
+
+</div>
+
+<div>
+  <% @loc.each do |i| %>
+  <li class="mapitem" data-city='<%= i.city %>' data-lat=<%= i.latitude %> data-lon=<%= i.longitude %> ></li>
+  <% end %>
+</div>
+
+
 <h2>Sign up</h2>
+
+<div class="signin_map">
+  <div id="map"></div>
+</div>
+
+<div class="overlay">
+  <div class="languageadd">
+    <dialog>
+      <form id="newlanguage" action="/guides/language" method="post">
+      <input type="text" name="language" placeholder="Add language to the list" />
+      <p>
+      <button type="submit" value="Add" />Add</button>
+      </form>
+      <button id="closebutton" value="close" />Cancel</button>
+    </dialog>
+  </div>
+</div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -13,17 +41,21 @@
   </div>
 
   <div class='location'>
+    <%= f.label :'Where are you based?' %><br>
     <%= f.collection_select :location_id, Location.all, :id, :city, {},
         {:multiple => false} %>
 
   </div>
 
-  <div class='languages'>
 
+
+  <div class='languages'>
+    <%= f.label :'What languages can you speak?' %><br>
     <%= f.collection_select :language_ids, Language.all, :id, :language, {},
         {:multiple => true} %>
-
+    <a id="displayLanguageButton" value="Open" />Add new language</a>
   </div>
+
 
   <div class='description'><%= f.text_area :description, :placeholder => "Description"  %></div>
 
