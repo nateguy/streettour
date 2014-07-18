@@ -43,14 +43,16 @@ class GuidesController < ApplicationController
     if a.nil? == true
       newlocation = Location.new
       newlocation.city = string
-
       if newlocation.save
-        redirect_to :back
         flash.now[:notice] = "Location added"
+        redirect_to :back
       else
         flash.now[:notice] = "Location add failed"
         redirect_to :back
       end
+    else
+      flash[:notice] = "Location exists"
+      redirect_to :back
     end
   end
 
@@ -58,18 +60,22 @@ class GuidesController < ApplicationController
     string = params[:language].capitalize
     a = Language.find_by language: string
 
+
     if a.nil? == true
       newlang = Language.new
       newlang.language = string
-
       if newlang.save
-        redirect_to :back
         flash.now[:notice] = "Language added"
-
+        redirect_to :back
       else
         flash.now[:notice] = "Language add failed"
         redirect_to :back
       end
+    else
+      flash[:notice] = "Language exists"
+      # binding.pry
+
+      redirect_to :back
     end
   end
 

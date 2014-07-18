@@ -21,8 +21,9 @@ module ApplicationHelper
           "\"});"
         end
       end
-
-      javascript_tag( "$(function() {\n  " + noties.join("\n  ") + "\n});")
+      # binding.pry
+      # javascript_tag( "$(function() { \n  " + noties.join("\n  ") + "\n}); debugger();")
+      javascript_tag(noties.join("\n "));
     end
   end
 end

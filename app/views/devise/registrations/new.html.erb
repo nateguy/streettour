@@ -26,58 +26,64 @@
     </dialog>
   </div>
 </div>
-<label>Where are you based?</label>
-<div class="signin_map">
-  <div id="map"></div>
-  <br>
+
+<div class="signup_map_box">
+  <div class="signup_map">
+  <label>Where are you based?</label>
+    <div id="map"></div>
+    <br>
+  </div>
 </div>
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<div class="signup_form_box">
+  <div class="signup_form">
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
 
-  <div class='location'>
-    <%= f.label :'You selected:' %><br>
-    <%= f.collection_select :location_id, Location.all, :id, :city, {},
-        {:multiple => false} %>
+    <div class='location'>
+      <%= f.label :'You selected:' %><br>
+      <%= f.collection_select :location_id, Location.all, :id, :city, {},
+          {:multiple => false} %>
 
+    </div>
+  <label>Personal Information</label>
+    <div class='email'>
+      <%= f.email_field :email, :placeholder => "E-mail", autofocus: true, class: "big_box" %>
+    </div>
+    <div class='name'>
+      <%= f.text_field :surname, :placeholder => "Last Name", class: "small_box" %><%= f.text_field :firstname, :placeholder => "First Name", class: "small_box"  %>
+    </div>
+    <div class='password'><%= f.password_field :password, :placeholder => "Password", class: "small_box", autocomplete: "off" %><%= f.password_field :password_confirmation, :placeholder => "Password Confirmation", class: "small_box", autocomplete: "off" %>
+    </div>
+
+
+    <div class='languages'>
+      <%= f.label :'What languages can you speak?' %><br>
+      <%= f.collection_select :language_ids, Language.all, :id, :language, {},
+          {:multiple => true} %><br>
+      <a id="displayLanguageButton" value="Open" />Add new language</a>
+    </div>
+
+
+    <div class='description'>
+  <%= f.label :'Describe yourself in 300 words' %><br>
+    <%= f.text_area :description, :placeholder => "Description"  %></div>
+
+
+    <div class='guide'><%= f.label :'Are you registering as a guide?' %>
+        <%= f.radio_button :isguide , true %>
+        <%= f.label :'Yes' %>
+        <%= f.radio_button :isguide , false %>
+        <%= f.label :'No' %>
+    </div>
+
+    <div class='picture'><%= f.file_field :avatar, class: "big_box" %>
+    </div>
+
+    <div><%= f.submit "Sign up" %></div>
+
+  <% end %>
   </div>
-<label>Personal Information</label>
-  <div class='email'>
-    <%= f.email_field :email, :placeholder => "E-mail", autofocus: true, class: "big_box" %>
-  </div>
-  <div class='name'>
-    <%= f.text_field :surname, :placeholder => "Last Name", class: "small_box" %><%= f.text_field :firstname, :placeholder => "First Name", class: "small_box"  %>
-  </div>
-  <div class='password'><%= f.password_field :password, :placeholder => "Password", class: "small_box", autocomplete: "off" %><%= f.password_field :password_confirmation, :placeholder => "Password Confirmation", class: "small_box", autocomplete: "off" %>
-  </div>
+</div>
 
-
-  <div class='languages'>
-    <%= f.label :'What languages can you speak?' %><br>
-    <%= f.collection_select :language_ids, Language.all, :id, :language, {},
-        {:multiple => true} %>
-    <a id="displayLanguageButton" value="Open" />Add new language</a>
-  </div>
-
-
-  <div class='description'>
-<%= f.label :'Describe yourself in 300 words' %><br>
-  <%= f.text_area :description, :placeholder => "Description"  %></div>
-
-
-  <div class='guide'><%= f.label :'Are you registering as a guide?' %>
-      <%= f.radio_button :isguide , true %>
-      <%= f.label :'Yes' %>
-      <%= f.radio_button :isguide , false %>
-      <%= f.label :'No' %>
-  </div>
-
-  <div class='picture'><%= f.file_field :avatar, class: "big_box" %>
-  </div>
-
-  <div><%= f.submit "Sign up" %></div>
-
-<% end %>
-
-<%= render "devise/shared/links" %>
 
 

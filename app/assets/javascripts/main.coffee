@@ -5,7 +5,7 @@ $ ->
 
 
   setupView = (lat, lon) ->
-    @map = L.map('map').setView([lat, lon], 5);
+    @map = L.map('map').setView([lat, lon], 4);
     L.tileLayer('http://{s}.tiles.mapbox.com/v3/nateguy.ip5nk518/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
       maxZoom: 18
@@ -19,7 +19,7 @@ $ ->
     guideImageLinksForCity = (city) ->
 
       buildLink = (guideId, avatar) ->
-        "<a href=/guides/#{guideId}><image width=120 src=#{avatar}></a>"
+        "<a href=/guides/#{guideId}><image width=60 src=#{avatar}></a>"
 
       guides = ""
 
@@ -37,7 +37,7 @@ $ ->
 
     if registration == true
 
-      header = "<h3>#{city}</h3>"
+      header = "#{city}"
       content = ""
       footer = "<a onclick='myFunction(" + id + ")'>Select</a>"
     else
@@ -77,8 +77,6 @@ $ ->
 
   setupView(22.279774, 114.153814)
 
-  $('.leaflet-popup-content-wrapper')
-
 
   $('#closebutton').click ->
     $('.languageadd').css({"display":"none"})
@@ -91,16 +89,13 @@ $ ->
     displayLanguage()
 
   # map functions differently depending on page
-  if $(".signin_map")[0]
+  if $(".signup_map")[0]
     showAllLocations(map)
     map.on('click', onMapClick)
 
   else
     showLocationWithGuides(map)
 
-myFunction = ->
-  $('.selectedLoc').html("heyheyhey")
-  alert('hey')
 
 onMapClick = (e) ->
   console.log "onMapClick"
@@ -108,7 +103,7 @@ onMapClick = (e) ->
 
 displayLocationMap = ->
 
-  $('.signin_map').css({"display":"block"})
+  $('.signup_map').css({"display":"block"})
   $('.overlay').css({"display":"block"})
 
 displayLanguage = ->
@@ -124,12 +119,11 @@ setLocationPin = (result, e) ->
 
   popup = L.popup();
 
-  header_text = "<h3>#{locality}<h3>"
-  content = "<p>Add this location?<br>
-  <form id='newlanguage' action='/guides/newlocation' method='post'>
-  <input type='hidden' name='locality' value='" + locality + "'>
-  <button type='submit' value='submit'>Yes</button></p>"
-
+  header_text = "<p>#{locality}</p>"
+  content = "<form id='newlanguage' action='/guides/newlocation' method='post'>
+  <input type='hidden' name='locality' value=" + "#{locality}" + ">
+  <button type='submit' value='submit'>Add this location</button></p>"
+  console.log locality
   popup
       .setLatLng(e.latlng)
       .setContent(header_text + content)
