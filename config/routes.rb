@@ -13,13 +13,10 @@ Rails.application.routes.draw do
   #get 'profile' => 'profile#show' # if you come with GET request, go to index
 
   get 'guides' => 'guides#index' #show list of guides
-  get 'guides/new' => 'guides#new'
+  get 'guides/:location' => 'guides#index'
   post 'guides/comment/:user_id' => 'guides#comment'
-  get 'guides/:id' => 'guides#show'
-#  get 'guides/location/:location' => 'guides#location'
-  get 'guides/location/:location' => 'guides#locations'
-  post 'guides' => 'guides#create'
-  post 'guides/language' => 'guides#language'
+  get 'guides/id/:id' => 'guides#show'
+  post 'guides/newlanguage' => 'guides#newlanguage'
   post 'guides/newlocation' => 'guides#newlocation'
 
 end

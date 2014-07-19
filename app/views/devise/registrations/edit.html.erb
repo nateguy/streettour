@@ -1,7 +1,12 @@
-<div class="edit_form">
+
 
   <h2>Edit <%= resource_name.to_s.humanize %></h2>
-   <div><%= image_tag current_user.avatar.url %></div>
+<div class="edit_form_image">
+   <div id="image"><%= image_tag current_user.avatar.url %></div>
+</div>
+<div class="edit_form_box">
+  <div class="edit_form">
+
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= devise_error_messages! %>
 
@@ -12,13 +17,13 @@
       <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
     <% end %>
 
+    <div>
+      <div id='surname_box'><%= f.label :surname %><br />
+        <%= f.text_field :surname %></div>
 
-    <div><%= f.label :surname %><br />
-      <%= f.text_field :surname %></div>
-
-    <div><%= f.label :firstname %><br />
-      <%= f.text_field :firstname %></div>
-
+      <div id='firstname_box'><%= f.label :firstname %><br />
+        <%= f.text_field :firstname %></div>
+    </div>
     <div class='location'>
     <%= f.label :Location %><br />
       <%= f.collection_select :location_id, Location.all, :id, :city, {},
@@ -60,6 +65,6 @@
   <% end %>
 
   <p><%= button_to "Delete", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
+  </div>
   <%= link_to "Back", :back %>
 </div>

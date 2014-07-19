@@ -1,83 +1,65 @@
 class GuidesController < ApplicationController
   protect_from_forgery with: :null_session,  :except => [:comment]
 
+  def index #listing of the following items either with a location variable or not
 
+    if params[:location].blank?
+      @guides = User.where(isguide: true)
+    else
+      @guides = (Location.find_by city: params[:location]).users.where(isguide: true)
 
-  def index #listing of the following items
-    #@guides = User.all
-
-    @guides = User.where(isguide: true)
-    @locations = Location.all
-
-  #  guides.username = params[:name] #parameter/value name of html username
-  #  flash.now[:notice] = guides.username
-
-  end
-
-  def new
+    end
   end
 
 
-
-
-  def show
-
+  def show #show profile
     user_id  = params[:id]
     commenter_id = params[:commenter_id]
-    @g = User.find(user_id)
-    @c = User.all
-
+    @profile = User.find(user_id)
 
     if user_id.blank?
       @post = Comment.all
     else
       @post = Comment.where(user_id: user_id)
 
-#@posts = p.comments
     end
   end
 
-  def newlocation
-    string = params[:locality].capitalize
-    a = Location.find_by city: string
+  def newlocation #create new location
+    newcity = params[:locality].capitalize
+    a = Location.find_by city: newcity
     if a.nil? == true
       newlocation = Location.new
-      newlocation.city = string
+      newlocation.city = newcity
       if newlocation.save
         flash.now[:notice] = "Location added"
-        redirect_to :back
       else
         flash.now[:notice] = "Location add failed"
-        redirect_to :back
       end
     else
       flash[:notice] = "Location exists"
-      redirect_to :back
     end
+    redirect_to :back
   end
 
-  def language
-    string = params[:language].capitalize
-    a = Language.find_by language: string
+  def newlanguage
+    language = params[:language]
+    @languages = Language.find_by language: language
 
-
-    if a.nil? == true
-      newlang = Language.new
-      newlang.language = string
-      if newlang.save
+    if @languages.nil? == true
+      newlanguage = Language.new
+      newlanguage.language = language.capitalize
+      if newlanguage.save
         flash.now[:notice] = "Language added"
-        redirect_to :back
       else
         flash.now[:notice] = "Language add failed"
-        redirect_to :back
       end
     else
       flash[:notice] = "Language exists"
-      # binding.pry
-
-      redirect_to :back
     end
+    redirect_to :back
   end
+
 
   def comment
     if user_signed_in?
@@ -88,40 +70,12 @@ class GuidesController < ApplicationController
       comments.user_id = user_id
       comments.commenter_id = User.current.id
 
-
-      if comments.save
-
-        redirect_to :back
-      else
+      if comments.save == false
         flash.now[:notice] = "Sorry there was an error"
-        redirect_to :back
-
       end
-    end
-  end
-
-  def create
-
-    guides = Guides.new
-    guides.name = params[:name] #parameter/value name of html username
-    guides.location = params[:location]
-    guides.description = params[:description]
-    flash.now[:notice] = guides.name
-    #if the bottom returns false, it cannot be saved
-    if guides.save
-      render :create
-      #redirect_to root_path #if successful, redirect to root directory
-    else
-      render :text, "Error" #return error message if fail
+      redirect_to :back
     end
   end
 
 
-  def locations
-    if params[:location] != ""
-      @y = (Location.find_by city: params[:location]).users
-      @guides = @y.where(isguide: true)
-    end
-  #  @g = Guides.find_by_location(params[:location])
-  end
 end

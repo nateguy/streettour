@@ -19,7 +19,7 @@ $ ->
     guideImageLinksForCity = (city) ->
 
       buildLink = (guideId, avatar) ->
-        "<a href=/guides/#{guideId}><image width=60 src=#{avatar}></a>"
+        "<a href=/guides/id/#{guideId}><image width=60 src=#{avatar}></a>"
 
       guides = ""
 
@@ -39,11 +39,11 @@ $ ->
 
       header = "#{city}"
       content = ""
-      footer = "<a onclick='myFunction(" + id + ")'>Select</a>"
+      footer = "<a onclick='idFunction(" + id + ")'>Select</a>"
     else
       header = "<h3>Guides in: #{city}</h3>"
       content = guideImageLinksForCity(city)
-      footer = "<p><a href='guides/location/#{city}'>See more...</a></p>"
+      footer = "<p><a href='guides/#{city}'>See more...</a></p>"
 
 
     popupContent = header + '<br>' + content + footer
@@ -82,9 +82,6 @@ $ ->
     $('.languageadd').css({"display":"none"})
     $('.overlay').css({"display":"none"})
 
-  $('#displayLocationButton').click ->
-    displayLocationMap()
-
   $('#displayLanguageButton').click ->
     displayLanguage()
 
@@ -101,18 +98,11 @@ onMapClick = (e) ->
   console.log "onMapClick"
   codeLatLng(e)
 
-displayLocationMap = ->
-
-  $('.signup_map').css({"display":"block"})
-  $('.overlay').css({"display":"block"})
-
 displayLanguage = ->
 
   $('.languageadd').css({"display":"block"})
   $('.overlay').css({"display":"block"})
 
-initialize = ->
-  geocoder = new google.maps.Geocoder();
 
 setLocationPin = (result, e) ->
   locality = result

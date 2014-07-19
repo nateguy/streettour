@@ -1,46 +1,42 @@
 <dialog>
 
   <div class="profile_details">
-    <div class="profile_img"><%= image_tag @g.avatar.url %></div>
+    <div class="profile_img"><%= image_tag @profile.avatar.url %></div>
 
     <div class="profile_body">
       <div class="profile_row">
-      <h2><%= @g.firstname %></h2>
+      <h2><%= @profile.firstname %></h2>
       </div>
       <div class="profile_row">
-        <div class="descriptor">Location: </div>
-        <div class="field"><%= @g.location.city %></div>
+        <label>Location</label>
+        <div class="field"><%= @profile.location.city %></div>
       </div>
       <div class="profile_row">
-        <div class="descriptor">Languages: </div>
+        <label>Languages</label>
         <div class="field">
-        <% @g.languages.each do |i| %>
-        <%= i.language %><br>
+        <% @profile.languages.each do |lang| %>
+        <%= lang.language + ", " %>
         <% end %>
         </div>
       </div>
       <div class="profile_row">
-        <div class="descriptor">Description: </div>
-        <div class="field"><%= @g.description %></div>
+        <label>Description</label>
+        <div class="field"><%= @profile.description %></div>
       </div>
     </div>
 
   </div>
 
 
-
-
-
-  <span>Comments:</span>
   <div class="messages">
-
+    <span>Comments:</span>
       <% @post.each do |post| %>
 
         <% if post.commenter_id.blank? %>
           <% commenter_photo = "" %>
           <% commenter_name = "Anonymous" %>
         <% else %>
-          <% commenter = @c.find(post.commenter_id) %>
+          <% commenter = User.find(post.commenter_id) %>
           <% commenter_photo = commenter.avatar.url %>
           <% commenter_name = commenter.firstname %>
         <% end %>
@@ -62,7 +58,7 @@
 
 <% if user_signed_in? %>
   <div class="comment_box">
-    <form id="create" action="/guides/comment/<%= @g.id %>" method="post">
+    <form id="create" action="/guides/comment/<%= @profile.id %>" method="post">
       <input type="text" placeholder="Title" name="title" id="user_id"><br>
       <textarea placeholder="Comment" name="content"></textarea><br>
       <input type="submit" value="Leave comment">

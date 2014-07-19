@@ -5,14 +5,15 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-html {
+
+html, body {
   height: 100%;
 }
 body {
   padding-top: 50px;
   font-family: "Lato", "Helvetica Neue", Arial;
   width: 100%;
-  height: 100%;
+  background-image: url('/images/hk_background.jpg');
 }
 
 
@@ -72,16 +73,13 @@ body {
   display: none;
 }
 
-.profile_details {
-  font-size: 15pt;
-  padding: 5px 5px 5px 5px;
-  margin: 5px 5px 5px 5px;
-}
+
 
 .container_bg {
-  background-image: url('/images/hk_background.jpg');
-  margin: 0 0 0 0;
+
+  margin: 0 auto;
   padding: 0 0 0 0;
+
 }
 
 .container {
@@ -98,8 +96,43 @@ body {
 }
 
 
+.messages, .profile_details, .login_box, .edit_form_box, .signup_map_box, .signup_form_box, .map_container {
+  background-color: rgba(255,255,255, 0.8);
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4)
+}
+
+.messages, .profile_details {
+  width: 490px;
+  font-size: 12pt;
+}
+
+
+.edit_form_box, .signup_map_box, .signup_form_box {
+  width: 420px;
+  float: left;
+  display: table-cell;
+}
+
+.login_box {
+  width: 300px;
+  margin: 10px auto;
+
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    margin: 10px 10px 10px 10px;
+  }
+}
+
 .map_container {
-  width: 100%;
+
+  margin: 10px auto;
+  width: 700px;
   text-align: center;
 }
 
@@ -172,49 +205,66 @@ select {
 
 }
 
-.signup_map_box, .signup_form_box {
-
-  float: left;
-  display: table-cell;
-  background-color: rgba(255,255,255, 0.6);
-  width: 420px;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-  border-radius: 10px;
-}
 
 .signup_form {
   width: 400px;
 }
 
+
+
 .login_box input[type="email"], .login_box input[type="password"] {
-  width: 200px;
+  width: 260;
   -webkit-box-sizing: border-box;
   height: 40px;
 
-  margin: 10px 10px 10px 10px;
+  margin: 10px 0px 10px 0px;
   padding: 10px 10px 10px 10px;
   border-style: solid;
   border-color: rgb(150,150,150);
   font-size: 15pt;
-  outline: none;
   background-color: #f2f2f2;
   border-width: 1px;
 
 }
 
-.edit_form img {
-  width: 100px;
-  border-radius: 10px;
-}
+
 
 .map_container > h1 {
-  font-weight: bold;
+  font-weight: 300;
+  font-size: 50px;
+
+  -webkit-font-smoothing: subpixel-antialiased;
 }
+
+.edit_form_image {
+  float: left;
+}
+
 
 .signup_form #user_surname, .signup_form #user_password {
   width: 195px;
   margin-right: 5px;
+}
+
+.edit_form_box #firstname_box {
+  width: 195px;
+  padding-left: 5px;
+  display: table-cell;
+
+  input {
+    width: 195px;
+  }
+}
+
+
+.edit_form_box #surname_box {
+  width: 195px;
+  padding-right: 5px;
+  display: table-cell;
+
+  input {
+    width: 195px;
+  }
 }
 
 .signup_form #user_firstname, .signup_form #user_password_confirmation {
@@ -287,8 +337,10 @@ li {
   padding-right: 5px;
 }
 
-.profile_img img {
-  width: 200px;
+
+.profile_img img, .edit_form_image img {
+  width: 150px;
+  border-radius: 10px;
 }
 
 .profile_body {
@@ -304,15 +356,14 @@ li {
 
 .profile_row .field {
   font-size: 14pt;
-  font-weight: bold;
   display: table-cell;
 }
 
-.profile_row .descriptor {
-  font-size: 14pt;
-  margin: 2px 2px 2px 2px;
-  padding: 2px 2px 2px 2px;
-  display: table-cell;
+.profile_row {
+  margin-bottom: 2px;
+  margin-top: 2px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .logged.in {
@@ -327,9 +378,6 @@ li {
   font-weight: normal;
 }
 
-.message {
-  width: 600px;
-}
 
 .photo {
   display: table-cell;
@@ -340,7 +388,8 @@ li {
 }
 
 .message {
-  background-color: rgb(200,200,200);
+  width: 100%;
+  background-color: rgba(255,255,255,0.8);
   margin: 5px 5px 5px 0px;
   padding: 5px 5px 5px 5px;
   border-radius: 5px;

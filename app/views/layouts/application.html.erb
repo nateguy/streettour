@@ -3,6 +3,7 @@
 <head>
   <title>Tours</title>
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?language=en"></script>
   <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -12,7 +13,7 @@
 <body>
 <script type="text/javascript">
 
-  myFunction = function(id) {
+  idFunction = function(id) {
     $("#user_location_id").val(id);
     return true
   };
@@ -62,6 +63,6 @@
 
 
 <%= flash_noty_script_tag %>
-
+<div class="foot"></div>
 </body>
 </html>
