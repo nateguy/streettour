@@ -2,7 +2,7 @@ geocoder = new google.maps.Geocoder()
 locality = ""
 
 $ ->
-
+  current_path = window.location.pathname
 
   setupView = (lat, lon) ->
     @map = L.map('map').setView([lat, lon], 4);
@@ -13,8 +13,7 @@ $ ->
 
   panMap = (lat, lon, map) -> map.panTo([lat, lon])
 
-  showGuideMarkers = (lat, lon, map, city, id, registration) ->
-
+  showGuideMarkers = (lat, lon, map, city, id) ->
 
     guideImageLinksForCity = (city) ->
 
@@ -35,36 +34,26 @@ $ ->
 
       guides
 
-    if registration == true
-
-      header = "#{city}"
-      content = ""
-      footer = "<a onclick='idFunction(" + id + ")'>Select</a>"
-    else
-      header = "<h3>Guides in: #{city}</h3>"
-      content = guideImageLinksForCity(city)
-      footer = "<p><a href='guides/#{city}'>See more...</a></p>"
+    switch current_path
+      when "/users/sign_up"
+        header = "#{city}"
+        content = ""
+        footer = "<a onclick='idFunction(" + id + ")'>Select</a>"
+      when "/"
+        header = "<h3>Guides in: #{city}</h3>"
+        content = guideImageLinksForCity(city)
+        footer = "<p><a href='guides/#{city}'>See more...</a></p>"
+      else
+        header = "<p>#{city}</p>"
+        content = "<a href='guides/#{city}'>See more guides...</a>"
+        footer = ""
 
 
     popupContent = header + '<br>' + content + footer
     marker = L.marker([lat, lon]).addTo(map)
     marker.bindPopup(popupContent).openPopup()
 
-  showLocationWithGuides = (map) ->
-
-    mapitems = $('.mapitem')
-
-    for i in mapitems
-      i = $(i)
-      if i.data('guideexist') == true
-        id = i.data('id')
-        city = i.data('city')
-        lat = i.data('lat')
-        lon = i.data('lon')
-        showGuideMarkers(lat, lon, map, city, false)
-
-  showAllLocations = (map) ->
-
+  showPointers = (map) ->
     mapitems = $('.mapitem')
 
     for i in mapitems
@@ -73,9 +62,12 @@ $ ->
       city = i.data('city')
       lat = i.data('lat')
       lon = i.data('lon')
-      showGuideMarkers(lat, lon, map, city, id, true)
 
-  setupView(22.279774, 114.153814)
+      showGuideMarkers(lat, lon, map, city, id)
+
+  mapitems = $('.mapitem')
+  setupView( $(mapitems[0]).data('lat'), $(mapitems[0]).data('lon'))
+
 
 
   $('#closebutton').click ->
@@ -85,13 +77,11 @@ $ ->
   $('#displayLanguageButton').click ->
     displayLanguage()
 
-  # map functions differently depending on page
-  if $(".signup_map")[0]
-    showAllLocations(map)
+  showPointers(map)
+
+  if current_path is "/users/sign_up"
     map.on('click', onMapClick)
 
-  else
-    showLocationWithGuides(map)
 
 
 onMapClick = (e) ->

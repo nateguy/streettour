@@ -95,6 +95,9 @@ body {
 
 }
 
+.leaflet-popup-content p {
+  margin-bottom: 0px;
+}
 
 .messages, .profile_details, .login_box, .edit_form_box, .signup_map_box, .signup_form_box, .map_container {
   background-color: rgba(255,255,255, 0.8);
@@ -104,9 +107,11 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4)
 }
 
+
 .messages, .profile_details {
-  width: 490px;
+  width: 600px;
   font-size: 12pt;
+
 }
 
 
@@ -229,10 +234,11 @@ select {
 
 
 
-.map_container > h1 {
+h1 {
   font-weight: 300;
   font-size: 50px;
-
+  text-align: center;
+  padding-bottom: 10px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -326,7 +332,7 @@ td {
 
 li {
 
-  vertical-align: middle;
+  vertical-apaddinggn: middle;
   margin: 0 auto;
 }
 
@@ -335,6 +341,7 @@ li {
 .profile_img {
   display: table-cell;
   padding-right: 5px;
+  height: 150px;
 }
 
 
@@ -347,6 +354,13 @@ li {
   display: table-cell;
   padding-left: 5px;
   vertical-align: top;
+}
+
+.profile_map {
+  width: 400px;
+  #map {
+    height: 200px;
+  }
 }
 
 .profile_body h2{

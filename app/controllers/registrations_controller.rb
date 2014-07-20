@@ -2,7 +2,7 @@ class RegistrationsController < Devise::RegistrationsController
 
   def create
 
-    @loc = Location.all
+    @locations = Location.all
     super
     params[:newlanguage]
     language_ids = params[:user][:language_ids] #grab IDS
@@ -22,7 +22,7 @@ class RegistrationsController < Devise::RegistrationsController
   end
 
   def new
-    @loc = Location.all
+    @locations = Location.all
     super
   end
 
