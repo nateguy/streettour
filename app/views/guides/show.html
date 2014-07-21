@@ -10,12 +10,10 @@
       <div><%= image_tag @profile.avatar.url %></div>
       <div><button class="message">Message Guide</button></div>
       <div>Rating:
-      <!--
-       @post.each do |post|
-       t = (t + post.rating)
-       end
-       (t/@post.length)
-      -->
+      <% if (@post.length > 0) %>
+      <%= '%.1f' % ((@post.sum(:rating).to_f/@post.length)) %>
+      <% end %>
+
       </div>
 
     </div>
@@ -46,36 +44,38 @@
     </div>
   </div>
 
+  <% if @post.length > 0 %>
+    <div class="messages">
 
-  <div class="messages">
+      <label>Comments:</label>
 
-    <label>Comments:</label>
-      <% @post.each do |post| %>
+        <% @post.each do |post| %>
 
-        <% if post.commenter_id.blank? %>
-          <% commenter_photo = "" %>
-          <% commenter_name = "Anonymous" %>
-        <% else %>
-          <% commenter = User.find(post.commenter_id) %>
-          <% commenter_photo = commenter.avatar.url %>
-          <% commenter_name = commenter.firstname %>
+          <% if post.commenter_id.blank? %>
+            <% commenter_photo = "" %>
+            <% commenter_name = "Anonymous" %>
+          <% else %>
+            <% commenter = User.find(post.commenter_id) %>
+            <% commenter_photo = commenter.avatar.url %>
+            <% commenter_name = commenter.firstname %>
+          <% end %>
+
+            <div class="message" id="message_<%= post.id %>">
+              <div class="photo"><%= image_tag commenter_photo %> </div>
+              <div class="body">
+                <header>
+                  <span class="name"><%= commenter_name %></span> gave <%= @profile.firstname %> a rating of <span class="rating"><%= post.rating %></span>
+                </header>
+
+                <span class="title"><%= post.title %></span> - <span class="content"><%= post.content %>
+
+              </div>
+            </div>
+
         <% end %>
 
-          <div class="message" id="message_<%= post.id %>">
-            <div class="photo"><%= image_tag commenter_photo %> </div>
-            <div class="body">
-              <header>
-                <span class="name"><%= commenter_name %></span>
-                <span class="title"><%= post.title %></span>
-                 <span class="rating"><%= post.rating %></span>
-              </header>
-              <div class="content"><%= post.content %></div>
-            </div>
-          </div>
-
-      <% end %>
-
-
+    </div>
+  <% end %>
 
   <% if user_signed_in? %>
 
@@ -99,10 +99,8 @@
         <input type="submit" value="Leave comment">
       </form>
     </div>
-  </div>
+
 
 <% end %>
-
-  </div>
 
 

@@ -65,11 +65,8 @@ body {
 }
 
 .languageadd button {
-  background-color: rgb(0,200,0);
-  border: 0;
   width: 100px;
   height: 30px;
-  font-size: 15pt;
   border-radius: 5px;
 }
 
@@ -116,7 +113,7 @@ body {
   margin-bottom: 0px;
 }
 
-.messages, .profile_details, .login_box, .edit_form_box, .signup_map_box, .signup_form_box, .map_container {
+.comment_box, .messages, .profile_details, .login_box, .edit_form_box, .signup_map_box, .signup_form_box, .map_container {
   background-color: rgba(255,255,255, 0.8);
   margin: 10px 10px 10px 10px;
   padding: 10px 10px 10px 10px;
@@ -124,6 +121,11 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4)
 }
 
+.login_box input[type="submit"] {
+  width: 130px;
+  height: 50px;
+  font-size: 20px;
+}
 
 .messages, .profile_details {
   width: 600px;
@@ -196,18 +198,29 @@ input, textarea {
   width: 400px;
 }
 
-input[type="submit"] {
+.signup_form_box input[type="submit"] {
+  width: 130px;
+  height: 30px;
+}
+
+.comment_box input[type="submit"], .edit_form input[type="submit"] {
+  width: 130px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: arial,sans-serif;
+}
+
+
+button, input[type="submit"] {
   background-color: #f8f8f8;
-  background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+  background-image: -webkit-linear-gradient(#5d9aff, #5d9aff 38%, #5891f0);
   color: rgb(0,0,0);
-  border: 1px solid #c6c6c6;
+  border: 1px solid rgba(45, 102, 195, 1);
   text-align: center;
   vertical-align: middle;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.2);
   font-size: 12px;
   font-family: arial,sans-serif;
-  height: 30px;
-  width: 130px;
 }
 
 input[type="submit"]:hover {
@@ -378,7 +391,7 @@ li {
 }
 
 .profile_map {
-  width: 400px;
+  width: 300px;
   #map {
     height: 200px;
   }
@@ -390,7 +403,7 @@ li {
 }
 
 .profile_row .field {
-  font-size: 14pt;
+  font-size: 12pt;
   display: table-cell;
 }
 
@@ -436,6 +449,7 @@ li {
 
 .message img {
     width: 40px;
+    border-radius: 5px;
 }
 
 .message header {
@@ -445,6 +459,31 @@ li {
   font-size: 18px;
   color: rgb(0,0,0);
   text-align: top;
+}
+
+
+.profile_details {
+  display: table-cell;
+  width: 500px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.messages {
+  display: table-cell;
+  width: 500px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.comment_box {
+  display: table-cell;
+  width: 500px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 header .name {
@@ -462,13 +501,19 @@ header .title {
   font-size: 12px;
 }
 
+.message .title {
+  padding: 2px 2px 2px 2px;
+  margin: 2px 2px 2px 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
 
 
 
 
 .comment_box input, textarea {
   -webkit-box-sizing: border-box;
-  width: 550px;
+  width: 480px;
   margin: 1px 1px 1px 1px;
   padding: 3px 1px 3px 1px;
   font-size: 12pt;
