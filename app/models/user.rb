@@ -7,7 +7,6 @@ class User < ActiveRecord::Base
   validates :surname, presence: true
   validates :firstname, presence: true
   validates :description, presence: true
-  validates :isguide, presence: true
   has_and_belongs_to_many :languages
   has_many :comments
   belongs_to :location

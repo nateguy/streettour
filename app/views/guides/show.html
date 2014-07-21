@@ -50,8 +50,7 @@
       <label>Comments:</label>
 
         <% @post.each do |post| %>
-
-          <% if post.commenter_id.blank? %>
+          <% if User.find_by_id(post.commenter_id).nil? %>
             <% commenter_photo = "" %>
             <% commenter_name = "Anonymous" %>
           <% else %>
@@ -59,6 +58,7 @@
             <% commenter_photo = commenter.avatar.url %>
             <% commenter_name = commenter.firstname %>
           <% end %>
+
 
             <div class="message" id="message_<%= post.id %>">
               <div class="photo"><%= image_tag commenter_photo %> </div>
@@ -74,7 +74,7 @@
 
         <% end %>
 
-    </div>
+   </div>
   <% end %>
 
   <% if user_signed_in? %>

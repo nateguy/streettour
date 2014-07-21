@@ -39,7 +39,7 @@ $ ->
 
     switch current_path
       when "/users/sign_up"
-        header = "#{city}"
+        header = "<span>#{city}</span>"
         content = ""
         footer = "<a onclick='idFunction(" + id + ")'>Select</a>"
       when "/"
