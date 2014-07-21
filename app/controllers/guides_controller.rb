@@ -68,6 +68,7 @@ class GuidesController < ApplicationController
       comments.title = params[:title]
       comments.content = params[:content]
       comments.user_id = user_id
+      comments.rating = params[:rating]
       comments.commenter_id = User.current.id
 
       if comments.save == false

@@ -16,7 +16,24 @@ body {
   background-image: url('/images/hk_background.jpg');
 }
 
+.star {
+  width: 20px;
+  height: 20px;
+  background-color: #999999;
+  outline-color: #000000;
+  border-style: 1px;
+  margin: 2px 2px 2px 2px;
+  float: left;
+  border-radius: 5px;
 
+}
+
+.rating_box {
+  width: 200px;
+  height: 30px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
 
 .overlay {
   display: none;
@@ -180,13 +197,17 @@ input, textarea {
 }
 
 input[type="submit"] {
-  background-color: rgb(0,150,0);
-  color: rgb(255,255,255);
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+  color: rgb(0,0,0);
+  border: 1px solid #c6c6c6;
   text-align: center;
   vertical-align: middle;
-  border-bottom: 3px solid rgb(0,90,0);
-  height: 50px;
-  width: 100px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  font-size: 12px;
+  font-family: arial,sans-serif;
+  height: 30px;
+  width: 130px;
 }
 
 input[type="submit"]:hover {
@@ -447,7 +468,7 @@ header .title {
 
 .comment_box input, textarea {
   -webkit-box-sizing: border-box;
-  width: 600px;
+  width: 550px;
   margin: 1px 1px 1px 1px;
   padding: 3px 1px 3px 1px;
   font-size: 12pt;
@@ -477,11 +498,5 @@ header .title {
 }
 
 .comment_box input[type="submit"] {
-  background-color: rgb(0,150,0);
-  color: rgb(255,255,255);
-  text-align: center;
-  vertical-align: middle;
-  border-bottom: 1px solid rgb(0,90,0);
-  height: 25px;
-  width: 130px;
+
 }

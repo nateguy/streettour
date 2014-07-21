@@ -5,8 +5,20 @@
 
 
   <div class="profile_details">
-    <div class="profile_img"><%= image_tag @profile.avatar.url %></div>
+    <div class="profile_img">
 
+      <div><%= image_tag @profile.avatar.url %></div>
+      <div><button class="message">Message Guide</button></div>
+      <div>Rating:
+      <!--
+       @post.each do |post|
+       t = (t + post.rating)
+       end
+       (t/@post.length)
+      -->
+      </div>
+
+    </div>
     <div class="profile_body">
       <div class="profile_row">
       <h2><%= @profile.firstname %></h2>
@@ -36,7 +48,8 @@
 
 
   <div class="messages">
-    <span>Comments:</span>
+
+    <label>Comments:</label>
       <% @post.each do |post| %>
 
         <% if post.commenter_id.blank? %>
@@ -54,6 +67,7 @@
               <header>
                 <span class="name"><%= commenter_name %></span>
                 <span class="title"><%= post.title %></span>
+                 <span class="rating"><%= post.rating %></span>
               </header>
               <div class="content"><%= post.content %></div>
             </div>
@@ -61,17 +75,32 @@
 
       <% end %>
 
+
+
+  <% if user_signed_in? %>
+
+    <div class="comment_box">
+    <label>Post new comment:</label>
+
+      <form id="create" action="/guides/comment/<%= @profile.id %>" method="post">
+
+        <input type="text" placeholder="Title" name="title" id="user_id"><br>
+        Rating:
+        <input class="rating_value" type="hidden" name="rating" value="0">
+        <div class="rating_box">
+          <div class="star s1" id="1"></div>
+          <div class="star s2" id="2"></div>
+          <div class="star s3" id="3"></div>
+          <div class="star s4" id="4"></div>
+          <div class="star s5" id="5"></div>
+        </div>
+
+        <textarea placeholder="Comment" name="content"></textarea><br>
+        <input type="submit" value="Leave comment">
+      </form>
+    </div>
   </div>
 
-<% if user_signed_in? %>
-  <div class="comment_box">
-    <form id="create" action="/guides/comment/<%= @profile.id %>" method="post">
-      <input type="text" placeholder="Title" name="title" id="user_id"><br>
-      <textarea placeholder="Comment" name="content"></textarea><br>
-      <input type="submit" value="Leave comment">
-    </form>
-  </div>
-  <button class="message">Message Guide</button>
 <% end %>
 
   </div>

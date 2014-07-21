@@ -4,7 +4,7 @@ class RegistrationsController < Devise::RegistrationsController
 
     @locations = Location.all
     super
-    params[:newlanguage]
+
     language_ids = params[:user][:language_ids] #grab IDS
     language_ids.each do |id|
       @user.languages << Language.find(id) unless id.blank?
