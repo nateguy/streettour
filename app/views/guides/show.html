@@ -45,12 +45,33 @@
       </div>
     </div>
   </div>
+  <% if user_signed_in? %>
 
-  <% if @post.length > 0 %>
+    <div class="comment_box">
+      <label>Post new comment:</label>
+
+      <form id="create" action="/guides/comment/<%= @profile.id %>" method="post">
+
+        <input type="text" placeholder="Title" name="title" id="user_id"><br>
+        Rating:
+        <input class="rating_value" type="hidden" name="rating" value="0">
+        <div class="rating_box_comment"></div>
+
+        <textarea placeholder="Comment" name="content"></textarea><br>
+        <input type="submit" value="Leave comment">
+      </form>
+    </div>
+
+
+  <% end %>
+
+
+
+
     <div class="messages">
 
-      <label>Comments:</label>
-
+      <label>Comments</label> <a onclick='openComment()'>Post new comment</a>
+      <% if @post.length > 0 %>
         <% @post.each do |post| %>
           <% if User.find_by_id(post.commenter_id).nil? %>
             <% commenter_photo = "" %>
@@ -60,47 +81,25 @@
             <% commenter_photo = commenter.avatar.url %>
             <% commenter_name = commenter.firstname %>
           <% end %>
+          <div class="message" id="message_<%= post.id %>">
+            <div class="photo"><%= commenter_name %><br>
+            <%= image_tag commenter_photo %>
 
-
-            <div class="message" id="message_<%= post.id %>">
-              <div class="photo"><%= commenter_name %><br>
-              <%= image_tag commenter_photo %>
-
-              </div>
-              <div class="body">
-                <div class="head">
-                  <div class="rating_box p<%= post.id %>" data-postid="<%= post.id %>" data-rating="<%= post.rating %>"></div>
-                  <div class="rating_box_title"><%= post.title %></div>
-                </div>
-                <div class="rating_content"><%= post.content %>
-                </div>
-              </div>
             </div>
+            <div class="body">
+              <div class="head">
+                <div class="rating_box p<%= post.id %>" data-postid="<%= post.id %>" data-rating="<%= post.rating %>"></div>
+                <div class="rating_box_title"><%= post.title %></div>
+              </div>
+              <div class="rating_content"><%= post.content %></div>
+            </div>
+          </div>
+          <% end %>
+      <% else %>
+         <div class="message"><span>No messages</span></div>
 
-        <% end %>
-
-   </div>
-  <% end %>
-
-  <% if user_signed_in? %>
-
-    <div class="comment_box">
-    <label>Post new comment:</label>
-
-      <form id="create" action="/guides/comment/<%= @profile.id %>" method="post">
-
-        <input type="text" placeholder="Title" name="title" id="user_id"><br>
-        Rating:
-        <input class="rating_value" type="hidden" name="rating" value="0">
-
-        <div class="rating_box_comment"></div>
-
-        <textarea placeholder="Comment" name="content"></textarea><br>
-        <input type="submit" value="Leave comment">
-      </form>
+      <% end %>
     </div>
 
-
-<% end %>
 
 

@@ -394,6 +394,11 @@ li {
   }
 }
 
+.left_divider {
+  display: table-cell;
+  width: 500px;
+}
+
 .rating_box_avg {
   text-align: center;
   margin: 0 auto;
@@ -528,7 +533,7 @@ li {
 }
 
 .comment_box {
-  display: table-cell;
+  display: none;
   width: 500px;
   float: left;
   margin: 10px 10px 10px 10px;
