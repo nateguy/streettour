@@ -9,9 +9,11 @@
 
       <div><%= image_tag @profile.avatar.url %></div>
       <div><button class="message">Message Guide</button></div>
-      <div>Rating:
+      <div class="rating_avg"><label>Rating</label>
       <% if (@post.length > 0) %>
-      <%= '%.1f' % ((@post.sum(:rating).to_f/@post.length)) %>
+        <% avg_rating = '%.1f' % ((@post.sum(:rating).to_f/@post.length)) %>
+        <h2><%= avg_rating %></h2>
+        <div class="rating_box_avg" data-rating="<%= avg_rating %>"></div>
       <% end %>
 
       </div>
@@ -61,14 +63,17 @@
 
 
             <div class="message" id="message_<%= post.id %>">
-              <div class="photo"><%= image_tag commenter_photo %> </div>
+              <div class="photo"><%= commenter_name %><br>
+              <%= image_tag commenter_photo %>
+
+              </div>
               <div class="body">
-                <header>
-                  <span class="name"><%= commenter_name %></span> gave <%= @profile.firstname %> <div class="rating_box p<%= post.id %>" data-postid="<%= post.id %>" data-rating="<%= post.rating %>"></div>
-                </header>
-
-                <span class="title"><%= post.title %></span> - <span class="content"><%= post.content %>
-
+                <div class="head">
+                  <div class="rating_box p<%= post.id %>" data-postid="<%= post.id %>" data-rating="<%= post.rating %>"></div>
+                  <div class="rating_box_title"><%= post.title %></div>
+                </div>
+                <div class="rating_content"><%= post.content %>
+                </div>
               </div>
             </div>
 
