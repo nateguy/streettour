@@ -64,7 +64,7 @@
               <div class="photo"><%= image_tag commenter_photo %> </div>
               <div class="body">
                 <header>
-                  <span class="name"><%= commenter_name %></span> gave <%= @profile.firstname %> a rating of <span class="rating"><%= post.rating %></span>
+                  <span class="name"><%= commenter_name %></span> gave <%= @profile.firstname %> <div class="rating_box p<%= post.id %>" data-postid="<%= post.id %>" data-rating="<%= post.rating %>"></div>
                 </header>
 
                 <span class="title"><%= post.title %></span> - <span class="content"><%= post.content %>
@@ -87,13 +87,8 @@
         <input type="text" placeholder="Title" name="title" id="user_id"><br>
         Rating:
         <input class="rating_value" type="hidden" name="rating" value="0">
-        <div class="rating_box">
-          <div class="star s1" id="1"></div>
-          <div class="star s2" id="2"></div>
-          <div class="star s3" id="3"></div>
-          <div class="star s4" id="4"></div>
-          <div class="star s5" id="5"></div>
-        </div>
+
+        <div class="rating_box_comment"></div>
 
         <textarea placeholder="Comment" name="content"></textarea><br>
         <input type="submit" value="Leave comment">
