@@ -15,10 +15,13 @@ gem 'devise'
 gem 'bootstrap-sass','~> 3.2.0'
 gem 'aws-sdk'
 gem 'geocoder'
+gem "select2-rails"
 # need to add tzinfo
 gem 'tzinfo-data'
 gem 'spring',         group: :development
 gem 'pry'
+gem 'faye'
+
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'

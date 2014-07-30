@@ -1,0 +1,9 @@
+
+<% @bookings.each do |i| %>
+  <% customer = User.find(i.customer_id) %>
+  <div class="booking_row">
+    <div class="booking_cell" id="booking_date"><%= i.booking_date.strftime("%b %d %Y") %></div>
+    <div class="booking_cell"><%= customer.firstname %> <%= customer.surname %></div>
+    <div class="booking_cell">E-mail customer</div>
+  </div>
+<% end %>

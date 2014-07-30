@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :messages
+
   #update registration controller
   #devise_for :users, :controllers => { registration: 'registration' }
   devise_for :users, :controllers => { registrations: 'registrations' }
@@ -15,8 +17,11 @@ Rails.application.routes.draw do
   get 'guides' => 'guides#index' #show list of guides
   get 'guides/:location' => 'guides#index'
   post 'guides/comment/:user_id' => 'guides#comment'
+
   get 'guides/id/:id' => 'guides#show'
   post 'guides/newlanguage' => 'guides#newlanguage'
   post 'guides/newlocation' => 'guides#newlocation'
+  post 'bookings/new/:id' => 'bookings#new'
+  get 'bookings' => 'bookings#index'
 
 end

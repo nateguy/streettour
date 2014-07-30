@@ -9,6 +9,7 @@
 
       <div><%= image_tag @profile.avatar.url %></div>
       <div><button class="message">Message Guide</button></div>
+      <div><button class="message">Book Guide</button></div>
       <div class="rating_avg"><label>Rating</label>
       <% if (@post.length > 0) %>
         <% avg_rating = '%.1f' % ((@post.sum(:rating).to_f/@post.length)) %>
@@ -45,6 +46,24 @@
       </div>
     </div>
   </div>
+
+  <% if user_signed_in? %>
+
+    <div class="new_booking">
+      <label>Make new booking:</label>
+
+      <form id="create" action="/bookings/new/<%= @profile.id %>" method="post">
+
+        <input type="date" name="date" placeholder="date">
+        <textarea placeholder="Comment" name="comments"></textarea>
+        <input type="submit" value="Book">
+      </form>
+    </div>
+
+
+  <% end %>
+
+
   <% if user_signed_in? %>
 
     <div class="comment_box">
@@ -70,7 +89,7 @@
 
     <div class="messages">
 
-      <label>Comments</label> <a onclick='openComment()'>Post new comment</a>
+      <div class="comments_label">Comments</div> <div class="newcomment_label"><a onclick='openComment()'>Post new comment</a></div>
       <% if @post.length > 0 %>
         <% @post.each do |post| %>
           <% if User.find_by_id(post.commenter_id).nil? %>
@@ -90,6 +109,7 @@
               <div class="head">
                 <div class="rating_box p<%= post.id %>" data-postid="<%= post.id %>" data-rating="<%= post.rating %>"></div>
                 <div class="rating_box_title"><%= post.title %></div>
+
               </div>
               <div class="rating_content"><%= post.content %></div>
             </div>

@@ -1,6 +1,8 @@
 /*
  *= require_tree .
  *= require_self
+ *= require select2
+ *= require select2-bootstrap
  */
 
 @import "bootstrap-sprockets";
@@ -14,6 +16,25 @@ body {
   font-family: "Lato", "Helvetica Neue", Arial;
   width: 100%;
   background-image: url('/images/hk_background.jpg');
+}
+
+.booking_row {
+  margin: 10px 10px 10px 10px;
+  width: 500px;
+  background-color: rgba(255,255,255, 0.8);
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4)
+}
+
+.booking_cell {
+  display: table-cell;
+  font-size: 12pt;
+  padding: 0 10px 0 10px;
+}
+
+#booking_date {
+  font-weight: bold;
 }
 
 .star {
@@ -111,7 +132,7 @@ body {
   margin-bottom: 0px;
 }
 
-.languageadd, .comment_box, .messages, .profile_details, .login_box, .edit_form_box, .signup_map_box, .signup_form_box, .map_container {
+.languageadd, .new_booking, .comment_box, .messages, .profile_details, .login_box, .edit_form_box, .signup_map_box, .signup_form_box, .map_container {
   background-color: rgba(255,255,255, 0.8);
 
   padding: 10px 10px 10px 10px;
@@ -119,7 +140,7 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4)
 }
 
-.comment_box, .messages, .profile_details, .login_box, .edit_form_box, .signup_map_box, .signup_form_box, .map_container {
+.new_booking, .comment_box, .messages, .profile_details, .login_box, .edit_form_box, .signup_map_box, .signup_form_box, .map_container {
   margin: 10px 10px 10px 10px;
 }
 
@@ -524,7 +545,7 @@ li {
   padding: 10px 10px 10px 10px;
 }
 
-.messages {
+.new_booking, .messages {
   display: table-cell;
   width: 500px;
   float: left;
@@ -532,7 +553,21 @@ li {
   padding: 10px 10px 10px 10px;
 }
 
-.comment_box {
+
+.messages .comments_label {
+    text-align: left;
+    width: 250px;
+    display: table-cell;
+    font-weight: bold;
+}
+
+.messages .newcomment_label {
+    text-align: right;
+    width: 250px;
+    display: table-cell;
+}
+
+ .comment_box {
   display: none;
   width: 500px;
   float: left;

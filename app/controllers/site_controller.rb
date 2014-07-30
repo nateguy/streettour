@@ -35,7 +35,7 @@ class SiteController < ApplicationController
   end
 
   def about
-  #     flash.now[:alert] = "About"
+    flash.now[:alert] = "About"
   end
 
 end

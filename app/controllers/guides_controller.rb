@@ -1,6 +1,7 @@
 class GuidesController < ApplicationController
   protect_from_forgery with: :null_session,  :except => [:comment]
 
+
   def index #listing of the following items either with a location variable or not
 
     if params[:location].blank?
@@ -13,8 +14,9 @@ class GuidesController < ApplicationController
 
 
   def show #show profile
+    flash.now[:alert] = "Show profile"
     user_id  = params[:id]
-    commenter_id = params[:commenter_id]
+
     @profile = User.find(user_id)
 
     if user_id.blank?
@@ -43,7 +45,9 @@ class GuidesController < ApplicationController
   end
 
   def newlanguage
+    flash.now[:alert] = "new lang"
     language = params[:language]
+
     @languages = Language.find_by language: language
 
     if @languages.nil? == true
@@ -57,7 +61,9 @@ class GuidesController < ApplicationController
     else
       flash[:notice] = "Language exists"
     end
-    redirect_to :back
+    redirect_to :back, :flash => { :notice => "Insufficient rights!" }
+
+
   end
 
 

@@ -7,6 +7,7 @@ $ ->
 
 
 
+
   setupView = (lat, lon) ->
     @map = L.map('map').setView([lat, lon], 4);
     L.tileLayer('http://{s}.tiles.mapbox.com/v3/nateguy.ip5nk518/{z}/{x}/{y}.png', {
@@ -72,7 +73,6 @@ $ ->
   setupView( $(mapitems[0]).data('lat'), $(mapitems[0]).data('lon'))
 
 
-
   $('#closebutton').click ->
     $('.languageadd').css({"display":"none"})
     $('.overlay').css({"display":"none"})
@@ -80,10 +80,16 @@ $ ->
   $('#displayLanguageButton').click ->
     displayLanguage()
 
+  $("#user_language_ids").select2({
+            width: 400
+          });
+
   showPointers(map)
 
   if current_path is "/users/sign_up"
     map.on('click', onMapClick)
+
+
 
 
 

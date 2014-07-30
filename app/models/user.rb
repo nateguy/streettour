@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   validates :description, presence: true
   has_and_belongs_to_many :languages
   has_many :comments
+  has_many :bookings
   belongs_to :location
 
   has_attached_file :avatar, :default_url => "/images/:style/missing.png"

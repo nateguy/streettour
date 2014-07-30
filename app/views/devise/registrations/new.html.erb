@@ -1,14 +1,9 @@
-<div class="clicklocation">
-
-</div>
-
+  <%= flash[:notice] %>
 <div>
   <% @locations.each do |i| %>
   <li class="mapitem" data-id='<%=i.id %>' data-city='<%= i.city %>' data-lat=<%= i.latitude %> data-lon=<%= i.longitude %> ></li>
   <% end %>
 </div>
-
-
 
 <h2>Sign up</h2>
 
@@ -18,6 +13,7 @@
   <div class="languageadd">
     <dialog>
       <form id="newlanguage" action="/guides/newlanguage" method="post">
+
       <input type="text" name="language" placeholder="Add language to the list" />
       <p>
       <button type="submit" value="Add" />Add</button>
